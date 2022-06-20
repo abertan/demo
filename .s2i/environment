@@ -1,2 +1,2 @@
 RPY2_CFFI_MODE=ABI
-R_HOME=.
+R_HOME=rpy2.__path__
