@@ -1,2 +1,3 @@
 spyne
 rpy2
+numpy
