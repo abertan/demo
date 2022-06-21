@@ -3,8 +3,6 @@ from spyne import Application, rpc, ServiceBase, Iterable, Integer, Unicode
 from spyne.protocol.soap import Soap11
 from spyne.server.wsgi import WsgiApplication
 #### Codigo R
-import rpy2.rinterface as rinterface
-rinterface.initr()
 from rpy2.robjects import r
 rpy2.rinterface.initr()
 
