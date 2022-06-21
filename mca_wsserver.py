@@ -3,21 +3,14 @@ from spyne import Application, rpc, ServiceBase, Iterable, Integer, Unicode
 from spyne.protocol.soap import Soap11
 from spyne.server.wsgi import WsgiApplication
 #### Codigo R
-# import rpy2
-# %load_ext rpy2.ipython
-
-def get_r_home() -> Optional[str]:
-    r_home = os.environ.get('R_HOME')
-
-    if not r_home:
-        r_home = r_home_from_subprocess()
-    if not r_home and os.name == 'nt':
-        r_home = r_home_from_registry()
-    logger.info(f'R home found: {r_home}')
-    return r_home  
+import rpy2
+print(rpy2.__version__)
 import rpy2.situation
-rpy2.situation.get_r_home()
-from rpy2.robjects import r
+for row in rpy2.situation.iter_info():
+    print(row)
+import rpy2.robjects as r
+from rpy2.robjects.packages import importr
+base = importr('base')
 
 r('print("¡Hola Mundo!... desde lenguaje R")')
 print ('Ejemplo de suma')
