@@ -3,10 +3,6 @@ from spyne import Application, rpc, ServiceBase, Iterable, Integer, Unicode
 from spyne.protocol.soap import Soap11
 from spyne.server.wsgi import WsgiApplication
 #### Codigo R
-import rpy2.robjects as objects
-from rpy2.robjects.packages import importer
-base = importr('base')
-base._libPaths()[0]
 from rpy2.robjects import r
 
 r('print("¡Hola Mundo!... desde lenguaje R")')
