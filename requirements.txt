@@ -1,4 +1,4 @@
-wheel
+Optional
 spyne
 rpy2
 numpy
