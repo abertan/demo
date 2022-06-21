@@ -4,7 +4,6 @@ from spyne.protocol.soap import Soap11
 from spyne.server.wsgi import WsgiApplication
 #### Codigo R
 from rpy2.robjects import r
-rpy2.rinterface.initr()
 
 r('print("¡Hola Mundo!... desde lenguaje R")')
 print ('Ejemplo de suma')
