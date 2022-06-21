@@ -1,4 +1,5 @@
 spyne
 rpy2
+rpy2.situation
 numpy
 lxml
