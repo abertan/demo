@@ -1,1 +1,2 @@
 RPY2_CFFI_MODE=ABI
+APP_FILE=mca_wsserver.py
