@@ -1,4 +1,4 @@
-FROM python:3.8-slim
+FROM python:3.9-slim
 WORKDIR /usr/src/app
 ENV RPY2_CFFI_MODE=ABI
 RUN apt-get update && apt-get install -y --no-install-recommends r-base r-base-dev && rm -rf /var/lib/apt/lists/*
