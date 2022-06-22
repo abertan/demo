@@ -3,14 +3,7 @@ from spyne import Application, rpc, ServiceBase, Iterable, Integer, Unicode
 from spyne.protocol.soap import Soap11
 from spyne.server.wsgi import WsgiApplication
 #### Codigo R
-import rpy2
-print(rpy2.__version__)
-import rpy2.situation
-for row in rpy2.situation.iter_info():
-    print(row)
 import rpy2.robjects as r
-from rpy2.robjects.packages import importr
-base = importr('base')
 
 r('print("¡Hola Mundo!... desde lenguaje R")')
 print ('Ejemplo de suma')
